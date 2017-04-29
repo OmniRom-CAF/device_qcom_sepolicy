@@ -34,3 +34,5 @@ allow init bt_firmware_file:dir { mounton };
 
 #dontaudit non configfs usb denials
 dontaudit init sysfs:dir write;
+
+allow init cam_sysfs:file relabelto;
